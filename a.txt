@@ -1,6 +1,15 @@
 # %%
 #practical 1
-
+#  1. Perform the following:
+#  a. Read and display image.
+#  b. Resize a given image.
+#  c. Convert a given color image into a corresponding gray-scale image.
+#  d. Convert a given color/gray-scale image into black & white image f. Draw the image 
+# profile.
+#  e. Separate a given color image into three R G & B planes.
+#  f.
+#  Create a color image using separate three R, G and B planes.
+#  g. Write given 2-D data in image file
 import cv2
 import matplotlib.pyplot as plt
 
@@ -47,7 +56,11 @@ if img is not None:
 
 # %%
 #practical 2
-
+#   2.  To write and execute image processing programs using point processing method:
+#  a. Obtain Negative image 
+# b. Obtain Flip image
+#  c. Thresholding
+#  d. Contrast stretching 
 
 import cv2 , numpy as np , matplotlib.pyplot as plt
 
@@ -96,6 +109,12 @@ if img is not None:
 # %%
 # practical 3
 
+# 3. To write and execute programs for image arithmetic operations:
+#  a. Addition of two images 
+# b. Subtract one image from other image
+#  c. Calculate mean value of image
+#  d. Different Brightness by changing mean value
+
 import cv2, numpy as np
 img1 = cv2.imread("1.png",cv2.IMREAD_COLOR) 
 img2 = cv2.imread("2.jpg",cv2.IMREAD_COLOR) 
@@ -137,6 +156,14 @@ if img1 is not None and img2 is not None:
 
 # %%
 #practical 4
+# 4. To write and execute programs for image logical operations:
+#  a. AND operation between two images
+#  b. OR operation between two images
+#  c. Calculate intersection of two images
+# d. Water Marking using X-OR operation 
+# e. NOT operation (Negative image)
+
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -212,6 +239,9 @@ plt.show()
 
 # %%
 #practical 5
+#  5. To write and execute a program for histogram calculation and equalization:
+#  a.Using inbuilt function
+#  b.Without using inbuilt function
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -314,6 +344,13 @@ plt.show()
 
 # %%
 #practicla 6
+#  6. To write and execute a program performing the following geometric transformations on 
+# an image:
+#  a.Translation 
+# b.Scaling 
+# c.Rotation 
+# d.Shrinking 
+# e.Zooming 
 import cv2, numpy as np
 
 img = cv2.imread("1.png",cv2.IMREAD_UNCHANGED)
@@ -356,7 +393,12 @@ if img is not None:
     cv2.destroyAllWindows()
     
 
-# %%
+# %%practical 7 
+#   7. To understand various image noise models and to write programs for:
+#  a. Image restoration 
+# b. Remove Salt and Pepper Noise
+#  c. Minimize Gaussian noise
+#  d. Median filter and Weiner filter 
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -445,7 +487,10 @@ plt.tight_layout()
 plt.show()
 
 # %%
-#practical 8
+#practical 8 
+#     8. Write and execute programs to remove noise from images using spatial filtering.
+#  a. Understand 1-D and 2-D convolution process
+#  b. Use 3x3 Mask for low pass filter and high pass filter
 
 import cv2
 import numpy as np
@@ -491,7 +536,10 @@ cv2.imwrite("highpass.png", edges)
 
 # %%
 #practical 9
-
+#  9. Write and execute programs for image frequency domain filtering.
+#  a. Apply FFT on given image 
+# b. Perform low pass and high pass filtering in frequency domain 
+# c. Apply IFFT to reconstruct image
 
 import cv2
 import numpy as np
@@ -572,6 +620,7 @@ plt.show()
 
 # %%
 #practical 10 
+# 10. Write and execute a program for edge detection using different edge detection mask
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -623,6 +672,7 @@ plt.tight_layout(); plt.show()
 
 # %%
 #practical 11
+    #   11. Write and execute a program for image morphological operations erosion and dilation.
 
 import cv2
 import numpy as np
